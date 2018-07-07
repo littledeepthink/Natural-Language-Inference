@@ -127,10 +127,3 @@ class BiLSTMAtt(object):
         grads, global_norm = tf.clip_by_global_norm(tf.gradients(self.loss_val, tvars), clip_norm=clip_norm)
         train_op = Opt.apply_gradients(zip(grads, tvars))
         return train_op
-
-
-if __name__ == '__main__':
-    model = BiLSTMAtt(seq_length=100, n_vocab=16116, n_embed=100, n_hidden=50, n_classes=2, batch_size=64,
-                      learning_rate=0.001, optimizer='Adam')
-    w = model.weights
-    print(w, len(w))
