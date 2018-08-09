@@ -1,5 +1,6 @@
 # Natural-Language-Inference
 NLI is the task of determining whether a "hypothesis" is true(entailment), false(contradiction), or undetermined(neutral) given a "premise". It can be addressed by using related methods of NLSM.  
+
 Natural language sentence matching (NLSM) is the task of comparing two sentences and identifying the relationship between them. It is a fundamental technology for a variety of tasks.For example, paraphrase identification, question answering and information retrieval, NLI and machine comprehension.  
 
 References:  
