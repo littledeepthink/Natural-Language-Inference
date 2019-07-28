@@ -61,7 +61,7 @@ def predict(seq_length, n_vocab, n_embed, n_hidden, n_classes, batch_size, learn
 if __name__ == '__main__':
     folder_path = os.getcwd() + '\\related_data'
 
-    # Test1: use the pre-splited test data
+    # Test: use the pre-splited test data
     # lst = ['\left_test.npy', '\\right_test.npy', '\y_test.npy']
     # left_test, right_test, y_test = (np.load(folder_path + name) for name in lst)
     # print(y_test.shape)
@@ -89,17 +89,7 @@ if __name__ == '__main__':
     # left_a_l_test, right_a_l_test = (np.load(folder_path + name) for name in lst)
 
 
-    # Test2: input two texts and test the prediction of the trained model
-    # left_test = ['本产品的起价适用持中国居民身份证或中国护照的游客，持其他国家或地区证件的游客请选择对应的选项补足差额',
-    #              '允许自行选择火车票的座位']
-    # right_test = ['本产品可接受非大陆籍客人预定',
-    #               '本产品火车票为随机分配，不能保证连号,无法自行选定铺位、座席，抱歉']
-    # left_test, left_a_l_test = standard(left_test, char2index, 100)
-    # right_test, right_a_l_test = standard(right_test, char2index, 100)
-    # y_test = np.array([[1, 0], [0, 1]])
-
-
-    # Test3: use the extra test data
+    # Test: use the extra test data
     label2index = {'不矛盾': 0, '矛盾': 1}
 
     filename = folder_path + '\\test_data.xlsx'
