@@ -45,8 +45,8 @@ def inference(sent1, sent2, seq_length=100, n_vocab=16116, n_embed=100, n_hidden
 
 if __name__ == '__main__':
 
-    sent1 = '本产品的起价适用持中国居民身份证或中国护照的游客，持其他国家或地区证件的游客请选择对应的选项补足差额'
-    sent2 = '本产品接受非大陆籍客人预定'
+    sent1 = 'XXXXXXX'
+    sent2 = 'XXXXXXX'
 
     result = inference(sent1, sent2)
     print(result)
